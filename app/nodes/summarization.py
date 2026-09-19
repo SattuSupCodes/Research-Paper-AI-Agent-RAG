@@ -67,9 +67,15 @@ Papers:
 
     print("[BRIEFING] Ollama returned the briefing.")
 
+    print("\n" + "=" * 60)
+    print("EXECUTIVE BRIEFING")
+    print("=" * 60)
+    print("\n" + briefing)
+    print("\n" + "=" * 60)
+
     return {
         "briefing": {
             "content": briefing
         },
-        "error": None,
+        "error": None
     }
