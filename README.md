@@ -119,7 +119,7 @@ arxiv-research-agent/
 │       ├── vector_store.py
 │       └── llm_service.py
 │
-├── data/
+├── data/ [if cloning, create this yourself as mine I have .gitignored]
 │   ├── papers/
 │   └── chroma/
 │
