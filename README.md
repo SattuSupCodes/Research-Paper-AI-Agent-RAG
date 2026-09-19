@@ -573,29 +573,119 @@ The LLM generates an answer using the retrieved evidence.
 # Example Run
 
 ```text
-Research topic or arXiv ID: 2412.15998
+Research topic or arXiv ID: An autoencoder-based surrogate waveform model for quasi-circular binary-black-hole mergers
 
-[DOWNLOAD] Downloaded:
-CNN-LSTM Hybrid Deep Learning Model for Remaining Useful Life Estimation
+[SEARCH] Query: An autoencoder-based surrogate waveform model for quasi-circular binary-black-hole mergers
+[SEARCH] Found 20 papers
 
-[PARSE] Parsed:
-CNN-LSTM Hybrid Deep Learning Model for Remaining Useful Life Estimation
-(45843 characters)
+--- Papers Found ---
 
-[CHUNK] CNN-LSTM Hybrid Deep Learning Model for Remaining Useful Life Estimation:
-46 chunks
+[1] An autoencoder-based surrogate waveform model for quasi-circular binary-black-hole mergers
+    arXiv ID: 2602.00203v1
+    Authors: Anastasios Theodoropoulos, Nino Villanueva, Osvaldo Gramaxo Freitas, Tiago Fernandes, Solange Nunes, Alejandro Torres-Forne, Jose A. Font, Antonio Onofre, Jose D. Martin-Guerrero
+    PDF: https://arxiv.org/pdf/2602.00203v1
 
-[EMBED] Generating embeddings for 46 chunks...
+[2] Eccentric, nonspinning, inspiral, Gaussian-process merger approximant for the detection and characterization of eccentric binary black hole mergers
+    arXiv ID: 1711.06276v2
+    Authors: E. A. Huerta, C. J. Moore, Prayush Kumar, Daniel George, Alvin J. K. Chua, Roland Haas, Erik Wessel, Daniel Johnson, Derek Glennon, Adam Rebei, A. Miguel Holgado, Jonathan R. Gair, Harald P. Pfeiffer
+    PDF: https://arxiv.org/pdf/1711.06276v2
 
-[VECTOR] Indexed 46 chunks into 'research_papers'
+[3] Fast and accurate prediction of numerical relativity waveforms from binary black hole coalescences using surrogate models
+    arXiv ID: 1502.07758v2
+    Authors: Jonathan Blackman, Scott E. Field, Chad R. Galley, Bela Szilagyi, Mark A. Scheel, Manuel Tiglio, Daniel A. Hemberger
+    PDF: https://arxiv.org/pdf/1502.07758v2
+
+[4] Waveform Modelling for the Laser Interferometer Space Antenna
+    arXiv ID: 2311.01300v3
+    Authors:  LISA Consortium Waveform Working Group, Niayesh Afshordi, Sarp Akçay, Pau Amaro Seoane, Andrea Antonelli, Josu C. Aurrekoetxea, Leor Barack, Enrico Barausse, Robert Benkel, Laura Bernard, Sebastiano Bernuzzi, Emanuele Berti, Matteo Bonetti, Béatrice Bonga, Gabriele Bozzola, Richard Brito, Alessandra Buonanno, Alejandro Cárdenas-Avendaño, Marc Casals, David F. Chernoff, Alvin J. K. Chua, Katy Clough, Marta Colleoni, Geoffrey Compère, Mekhi Dhesi, Adrien Druart, Leanne Durkan, Guillaume Faye, Deborah Ferguson, Scott E. Field, William E. Gabella, Juan García-Bellido, Miguel Gracia-Linares, Davide Gerosa, Stephen R. Green, Maria Haney, Mark Hannam, Anna Heffernan, Tanja Hinderer, Thomas Helfer, Scott A. Hughes, Sascha Husa, Soichiro Isoyama, Michael L. Katz, Chris Kavanagh, Gaurav Khanna, Larry E. Kidder, Valeriya Korol, Lorenzo Küchler, Pablo Laguna, François Larrouturou, Alexandre Le Tiec, Benjamin Leather, Eugene A. Lim, Hyun Lim, Tyson B. Littenberg, Oliver Long, Carlos O. Lousto, Geoffrey Lovelace, Georgios Lukes-Gerakopoulos, Philip Lynch, Rodrigo P. Macedo, Charalampos Markakis, Elisa Maggio, Ilya Mandel, Andrea Maselli, Josh Mathews, Pierre Mourier, David Neilsen, Alessandro Nagar, David A. Nichols, Jan Novák, Maria Okounkova, Richard O'Shaughnessy, Naritaka Oshita, Conor O'Toole, Zhen Pan, Paolo Pani, George Pappas, Vasileios Paschalidis, Harald P. Pfeiffer, Lorenzo Pompili, Adam Pound, Geraint Pratten, Hannes R. Rüter, Milton Ruiz, Zeyd Sam, Laura Sberna, Stuart L. Shapiro, Deirdre M. Shoemaker, Carlos F. Sopuerta, Andrew Spiers, Hari Sundar, Nicola Tamanini, Jonathan E. Thompson, Alexandre Toubiana, Antonios Tsokaros, Samuel D. Upton, Maarten van de Meent, Daniele Vernieri, Jeremy M. Wachter, Niels Warburton, Barry Wardell, Helvi Witek, Vojtěch Witzany, Huan Yang, Miguel Zilhão, Angelica Albertini, K. G. Arun, Miguel Bezares, Alexander Bonilla, Christian Chapman-Bird, Bradley Cownden, Kevin Cunningham, Chris Devitt, Sam Dolan, Francisco Duque, Conor Dyson, Chris L. Fryer, Jonathan R. Gair, Bruno Giacomazzo, Priti Gupta, Wen-Biao Han, Roland Haas, Eric W. Hirschmann, E. A. Huerta, Philippe Jetzer, Bernard Kelly, Mohammed Khalil, Jack Lewis, Nicole Lloyd-Ronning, Sylvain Marsat, Germano Nardini, Jakob Neef, Adrian Ottewill, Christiana Pantelidou, Gabriel Andres Piovano, Jaime Redondo-Yuste, Laura Sagunski, Leo C. Stein, Viktor Skoupý, Ulrich Sperhake, Lorenzo Speri, Thomas F. M. Spieksma, Chris Stevens, David Trestini, Alex Vañó-Viñuales
+    PDF: https://arxiv.org/pdf/2311.01300v3
+
+[5] Numerical relativity higher order gravitational waveforms of eccentric, spinning, non-precessing binary black hole mergers
+    arXiv ID: 2210.01852v2
+    Authors: Abhishek V. Joshi, Shawn G. Rosofsky, Roland Haas, E. A. Huerta
+    PDF: https://arxiv.org/pdf/2210.01852v2
+
+Options:
+  1,3      → select papers
+  more     → show another batch
+  refine   → modify the research query
+  quit     → exit
+
+> 1
+
+[SELECT] Selected 1 paper(s).
+
+[DOWNLOAD] State keys: ['user_query', 'query_type', 'normalized_query', 'arxiv_results', 'selected_papers', 'qa_history', 'error', 'search_pool', 'shown_count']
+[DOWNLOAD] Selected papers: [{'title': 'An autoencoder-based surrogate waveform model for quasi-circular binary-black-hole mergers', 'authors': ['Anastasios Theodoropoulos', 'Nino Villanueva', 'Osvaldo Gramaxo Freitas', 'Tiago Fernandes', 'Solange Nunes', 'Alejandro Torres-Forne', 'Jose A. Font', 'Antonio Onofre', 'Jose D. Martin-Guerrero'], 'abstract': 'The generation of accurate waveforms from binary black hole (BBH) mergers is a major effort in Gravitational-Wave Astronomy. In recent years, machine-learning-based surrogate models for BBH waveforms have been proposed. Those offer the potential to dramatically accelerate waveform generation while maintaining accuracy competitive with that of traditional waveform approximants. In this work, we investigate the viability of autoencoders as generative models for gravitational-wave signals from quasi-circular BBH mergers. We introduce AESur3dq8, a novel surrogate waveform model based on autoencoders that enables the rapid and accurate construction of large template banks, producing millions of waveforms in under a second using modest computational resources. The model is trained on the numerical-relativity-informed surrogate NRHybSur3dq8 and subsequently fine-tuned using the SXS catalog of BBH simulations. We demonstrate that waveforms generated by AESur3dq8 achieve mismatches of order $10^{-4}$ with respect to Numerical Relativity waveforms, and that parameter estimation performed with these templates yields results fully consistent with those reported by the LIGO-Virgo-KAGRA Collaboration for observed gravitational-wave events.', 'published': '2026-01-30T12:20:08+00:00', 'arxiv_id': '2602.00203v1', 'pdf_url': 'https://arxiv.org/pdf/2602.00203v1'}]
+[DOWNLOAD] Downloaded: An autoencoder-based surrogate waveform model for quasi-circular binary-black-hole mergers
+[PARSE] Parsed: An autoencoder-based surrogate waveform model for quasi-circular binary-black-hole mergers (51971 characters)
+[CHUNK] An autoencoder-based surrogate waveform model for quasi-circular binary-black-hole mergers: 52 chunks
+[EMBED] Generating embeddings for 52 chunks...
+[EMBED] loading model:all-MiniLM-L6-v2
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|██████████████████| 103/103 [00:00<00:00, 4111.95it/s]
+Batches: 100%|████████████████████████████████| 2/2 [00:00<00:00,  2.43it/s]
+[VECTOR] Indexed 52 chunks into 'research_papers'
 
 [BRIEFING] Starting executive briefing...
+[BRIEFING] Sending context to Ollama...
 
 [OLLAMA] Model: llama3.1:8b
 [OLLAMA] Generating response...
 [OLLAMA] Response received.
-
 [BRIEFING] Ollama returned the briefing.
+
+--- Agent State ---
+Query: An autoencoder-based surrogate waveform model for quasi-circular binary-black-hole mergers
+Type: topic
+Normalized: An autoencoder-based surrogate waveform model for quasi-circular binary-black-hole mergers
+
+--- Executive Briefing ---
+Here is the executive research briefing for the paper "An autoencoder-based surrogate waveform model for quasi-circular binary-black-hole mergers":
+
+**Paper:** An autoencoder-based surrogate waveform model for quasi-circular binary-black-hole mergers
+**arXiv ID:** 2602.00203v1
+
+**Research Problem:**
+
+* The paper aims to develop a new surrogate waveform model for quasi-circular binary-black-hole mergers using autoencoders, which can generate accurate waveforms efficiently.
+* The research problem is to accelerate the waveform generation process while maintaining accuracy competitive with traditional waveform approximants.
+
+**Method:**
+
+* The authors use autoencoders as a hybrid artificial neural network capable of producing gravitational-wave signals from quasi-circular BBH systems.
+* The model is trained on a dataset generated using the NRHybSur3dq8 surrogate model and fine-tuned on the SXS catalog of BBH simulations.
+* The authors use a fully connected network upstream of the decoder to produce gravitational-wave signals.
+
+**Main Findings:**
+
+* The autoencoder-based surrogate waveform model, AESur3dq8, achieves mismatches of order 10−4 with respect to Numerical Relativity waveforms.
+* The model is able to generate millions of waveforms in under a second using modest computational resources.
+* The authors demonstrate that the waveforms generated by AESur3dq8 achieve results fully consistent with those reported by the LIGO-Virgo-KAGRA Collaboration for observed gravitational-wave events.
+
+**Limitations:**
+
+* The authors note that the availability of numerical waveforms for training is limited, which may lead to a slight degradation in the accuracy of the generated waveforms.
+* The model is only tested on quasi-circular BBH mergers, and it is not clear whether it can be extended to non-quasi-circular orbits.
+
+**Important Technical Contribution:**
+
+* The authors introduce a new surrogate waveform model based on autoencoders, which can generate accurate waveforms efficiently and has the potential to accelerate the waveform generation process.
+
+**Cross-Paper Comparison:**
+
+* The authors compare their results with previous work on surrogate waveform models, including Gaussian Process Regression and neural-network-based models.
+* The authors' results show that their autoencoder-based model achieves better performance than some of the previous models, especially in terms of speed.
+
+**Key Research Gaps:**
+
+* The authors note that the model is only tested on quasi-circular BBH mergers, and it is not clear whether it can be extended to non-quasi-circular orbits.
+* Further research is needed to extend the model to more general BBH configurations.
+
+**Useful Directions for Further Investigation:**
+
+* The authors suggest further research on extending the model to non-quasi-circular orbits and more general BBH configurations.
+* They also suggest investigating the use of other types of autoencoders or other neural network architectures to improve the performance of the model.
 ```
 
 ---
