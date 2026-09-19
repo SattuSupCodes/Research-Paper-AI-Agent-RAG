@@ -7,6 +7,7 @@ from app.nodes.parsing import parse_papers_node
 from app.nodes.chunking import chunk_papers_node
 from app.nodes.indexing import index_chunks_node
 from app.nodes.summarization import briefing_node
+from app.nodes.qa_loop import qa_loop_node
 def query_understanding(state:AgentState)->AgentState:
     query=state["user_query"].strip()
     if any(char.isdigit() for char in query) and "." in query:
@@ -44,6 +45,7 @@ def build_graph():
     graph.add_node("chunk_papers", chunk_papers_node)
     graph.add_node("index_chunks", index_chunks_node)
     graph.add_node("briefing", briefing_node)
+    graph.add_node("qa_loop", qa_loop_node)
     graph.add_edge(START, "query_understanding")
     graph.add_conditional_edges(
         "query_understanding", route_query,
@@ -62,7 +64,8 @@ def build_graph():
     graph.add_edge("parse_papers", "chunk_papers",)
     graph.add_edge("chunk_papers", "index_chunks")
     graph.add_edge("index_chunks","briefing")
-    graph.add_edge("briefing", END,)    
+    graph.add_edge("briefing", "qa_loop",)
+    graph.add_edge("qa_loop",END)      
     # graph.add_edge("query_understanding", END)
     return graph.compile()
 agent=build_graph()

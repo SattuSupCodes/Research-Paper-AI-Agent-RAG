@@ -48,12 +48,22 @@ def add_chunks(
 
 
 def search_chunks(
-    query_embedding: list[float],
-    n_results: int = 5,
+    query_embedding,
+    n_results=5,
+    arxiv_ids=None,
 ):
     collection = get_collection()
 
-    return collection.query(
-        query_embeddings=[query_embedding],
-        n_results=n_results,
-    )
+    query_kwargs = {
+        "query_embeddings": [query_embedding],
+        "n_results": n_results,
+    }
+
+    if arxiv_ids:
+        query_kwargs["where"] = {
+            "arxiv_id": {
+                "$in": arxiv_ids
+            }
+        }
+
+    return collection.query(**query_kwargs)
